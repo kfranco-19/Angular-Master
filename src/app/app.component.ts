@@ -127,8 +127,10 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
     console.log('on init');
 
-    //this.doNotificationSubscription();
+    this.doNotificationSubscription();
+    
     // iniciar formulario
+    
     this.initForm();
 
     this.mySubject.subscribe(result => {
